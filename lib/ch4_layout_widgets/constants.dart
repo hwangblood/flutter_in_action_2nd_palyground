@@ -1,4 +1,4 @@
 import 'package:flutter_in_action_2nd_materials/core/models.dart'
-    show ExampleEntity;
+    show SectionEntity;
 
-final ch4Examples = <ExampleEntity>[];
+final chSections = <SectionEntity>[];

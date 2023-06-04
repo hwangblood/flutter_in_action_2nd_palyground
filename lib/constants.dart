@@ -10,22 +10,22 @@ import 'package:flutter_in_action_2nd_materials/core/models.dart'
 final allChapters = <ChapterEntity>[
   ChapterEntity(
     title: '第二章：第一个Flutter应用',
-    examples: ch2Examples,
+    sections: ch2Sections,
   ),
   ChapterEntity(
     title: '第三章：基础组件',
-    examples: ch3Examples,
+    sections: ch3Sections,
   ),
   ChapterEntity(
     title: '第四章：布局类组件',
-    examples: ch4Examples,
+    sections: chSections,
   ),
   ChapterEntity(
     title: '第五章：容器类组件',
-    examples: ch5Examples,
+    sections: ch5Sections,
   ),
   ChapterEntity(
     title: '第六章：可滚动组件',
-    examples: ch6Examples,
+    sections: ch6Sections,
   ),
 ];

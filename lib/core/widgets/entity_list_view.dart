@@ -26,9 +26,9 @@ class EntityListView<T extends BaseEntity> extends StatelessWidget {
                   entity: entity as ChapterEntity,
                 );
               }
-              if (entity is BaseExampleEntity) {
-                return ExampleEntityTile(
-                  entity: entity as ExampleEntity,
+              if (entity is BaseSectionEntity) {
+                return SectionEntityTile(
+                  entity: entity as SectionEntity,
                 );
               }
 

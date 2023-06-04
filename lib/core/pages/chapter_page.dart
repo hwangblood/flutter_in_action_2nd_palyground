@@ -19,7 +19,7 @@ class ChapterPage extends StatelessWidget {
         title: Text(chapter.title),
       ),
       body: EntityListView(
-        entities: chapter.examples,
+        entities: chapter.sections,
       ),
     );
   }

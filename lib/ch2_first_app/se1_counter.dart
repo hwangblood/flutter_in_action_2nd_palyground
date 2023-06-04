@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-class CounterExample extends StatefulWidget {
-  const CounterExample({
+class Se1Counter extends StatefulWidget {
+  const Se1Counter({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<CounterExample> createState() => _CounterExampleState();
+  State<Se1Counter> createState() => _Se1CounterState();
 }
 
-class _CounterExampleState extends State<CounterExample> {
+class _Se1CounterState extends State<Se1Counter> {
   int _counter = 0;
 
-  void _incrementCounter() {
+  void _increment() {
+    // 更新状态
     setState(() {
       _counter++;
     });
@@ -37,7 +38,7 @@ class _CounterExampleState extends State<CounterExample> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _increment,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.

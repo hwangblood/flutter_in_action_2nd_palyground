@@ -16,27 +16,27 @@ abstract class BaseEntity {}
 abstract class BaseChapterEntity extends BaseEntity
     implements EntityWithTitle {}
 
-abstract class BaseExampleEntity extends BaseEntity
+abstract class BaseSectionEntity extends BaseEntity
     implements EntityWithTitle, EntityWithDescription {}
 
 class ChapterEntity extends BaseChapterEntity {
   @override
   String title;
-  final Iterable<ExampleEntity> examples;
+  final Iterable<SectionEntity> sections;
 
   ChapterEntity({
     required this.title,
-    required this.examples,
+    required this.sections,
   });
 }
 
-class ExampleEntity extends BaseExampleEntity {
+class SectionEntity extends BaseSectionEntity {
   @override
   String title;
   @override
   String description;
   final Widget child;
-  ExampleEntity({
+  SectionEntity({
     required this.title,
     required this.description,
     required this.child,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_in_action_2nd_materials/core/models.dart'
-    show ExampleEntity;
+    show SectionEntity;
 
-class ExampleEntityTile extends StatelessWidget {
-  final ExampleEntity entity;
-  const ExampleEntityTile({
+class SectionEntityTile extends StatelessWidget {
+  final SectionEntity entity;
+  const SectionEntityTile({
     super.key,
     required this.entity,
   });
