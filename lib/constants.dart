@@ -18,7 +18,7 @@ final allChapters = <ChapterEntity>[
   ),
   ChapterEntity(
     title: '第四章：布局类组件',
-    sections: chSections,
+    sections: ch4Sections,
   ),
   ChapterEntity(
     title: '第五章：容器类组件',
