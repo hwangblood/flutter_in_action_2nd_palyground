@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_in_action_2nd_materials/shared/widgets/widgets.dart';
+
 class Se1Constraints extends StatelessWidget {
   const Se1Constraints({super.key});
 
@@ -32,7 +34,7 @@ class Se1Constraints extends StatelessWidget {
               ),
             ),
           ),
-          const Divider(),
+          const DividerPadding(),
           Column(
             children: [
               const Text('SizedBox'),
@@ -60,7 +62,7 @@ class Se1Constraints extends StatelessWidget {
               ),
             ],
           ),
-          const Divider(),
+          const DividerPadding(),
           UnconstrainedBox(
             child: ConstrainedBox(
               constraints: //父
@@ -75,7 +77,7 @@ class Se1Constraints extends StatelessWidget {
               ),
             ),
           ),
-          const Divider(),
+          const DividerPadding(),
           ConstrainedBox(
             //父
             constraints: const BoxConstraints(
@@ -94,7 +96,7 @@ class Se1Constraints extends StatelessWidget {
               ),
             ),
           ),
-          const Divider(),
+          const DividerPadding(),
           AppBar(
             automaticallyImplyLeading: false,
             title: const Text('Loading受AppBar限制'),

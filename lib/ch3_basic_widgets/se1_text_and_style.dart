@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import 'package:flutter_in_action_2nd_materials/shared/widgets/widgets.dart';
+
 class Se1TextAndStyle extends StatelessWidget {
   const Se1TextAndStyle({super.key});
 
@@ -25,7 +27,7 @@ class Se1TextAndStyle extends StatelessWidget {
             "Hello world, textScaleFactor: 1.5",
             textScaleFactor: 1.5,
           ),
-          const Divider(),
+          const DividerPadding(),
           Text(
             'Hello world, TextStyle 用于指定文本显示的样式如颜色、字体、粗细、背景等',
             style: TextStyle(
@@ -38,7 +40,7 @@ class Se1TextAndStyle extends StatelessWidget {
               decorationStyle: TextDecorationStyle.dashed,
             ),
           ),
-          const Divider(),
+          const DividerPadding(),
           Text.rich(
             TextSpan(
               children: [
@@ -58,7 +60,7 @@ class Se1TextAndStyle extends StatelessWidget {
               ],
             ),
           ),
-          const Divider(),
+          const DividerPadding(),
           DefaultTextStyle(
             //1.设置文本默认样式
             style: const TextStyle(
@@ -81,7 +83,7 @@ class Se1TextAndStyle extends StatelessWidget {
               ],
             ),
           ),
-          const Divider(),
+          const DividerPadding(),
           const Text(
             "Applying the Raleway font for this text",
             style: TextStyle(

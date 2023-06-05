@@ -35,7 +35,12 @@ class EntityListView<T extends BaseEntity> extends StatelessWidget {
               // couldn't reach this point
               return const SizedBox.shrink();
             },
-            separatorBuilder: (ctx, index) => const Divider(),
+            separatorBuilder: (ctx, index) => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Divider(
+                color: Theme.of(context).dividerColor.withAlpha(125),
+              ),
+            ),
             itemCount: entities.length,
           );
   }
