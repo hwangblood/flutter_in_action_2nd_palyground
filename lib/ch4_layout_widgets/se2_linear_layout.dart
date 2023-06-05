@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_in_action_2nd_materials/shared/widgets/padding_divider.dart';
+import 'package:flutter_in_action_2nd_materials/shared/widgets/widgets.dart';
 
 class Se2LinearLayout extends StatelessWidget {
   const Se2LinearLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ScaffoldWithCodeView(
+      filePath: 'lib/ch4_layout_widgets/se2_linear_layout.dart',
       appBar: AppBar(
         title: const Text('线性布局（Row和Column）'),
       ),

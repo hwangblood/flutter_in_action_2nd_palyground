@@ -6,10 +6,16 @@ mixin HasTitle {
 mixin HasDescription {
   abstract String description;
 }
+mixin HasCodeView {
+  abstract String filePath;
+  abstract String? codeLinkPrefix;
+}
 
 abstract class EntityWithTitle with HasTitle {}
 
 abstract class EntityWithDescription with HasDescription {}
+
+abstract class EntityWithCodeView with HasCodeView {}
 
 abstract class BaseEntity {}
 
@@ -17,7 +23,9 @@ abstract class BaseChapterEntity extends BaseEntity
     implements EntityWithTitle {}
 
 abstract class BaseSectionEntity extends BaseEntity
-    implements EntityWithTitle, EntityWithDescription {}
+    implements
+        EntityWithTitle,
+        EntityWithDescription /* , EntityWithCodeView */ {}
 
 class ChapterEntity extends BaseChapterEntity {
   @override
@@ -35,10 +43,16 @@ class SectionEntity extends BaseSectionEntity {
   String title;
   @override
   String description;
+  // @override
+  // String? codeLinkPrefix;
+  // @override
+  // String filePath;
   final Widget child;
   SectionEntity({
     required this.title,
     required this.description,
+    // this.codeLinkPrefix,
+    // required this.filePath,
     required this.child,
   });
 }

@@ -8,7 +8,8 @@ class Se1TextAndStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ScaffoldWithCodeView(
+      filePath: 'lib/ch3_basic_widgets/se1_text_and_style.dart',
       appBar: AppBar(
         title: const Text('文本及样式示例'),
       ),

@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  widget_with_codeview: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +29,10 @@ flutter:
     - family: AbrilFatface
       fonts:
         - asset: assets/fonts/AbrilFatface-Regular.ttf
+  assets:
+    # source code
+    - lib/ch2_first_app/
+    - lib/ch3_basic_widgets/
+    - lib/ch4_layout_widgets/
+    - lib/ch5_container_widgets/
+    - lib/ch6_scrollable_widgets/

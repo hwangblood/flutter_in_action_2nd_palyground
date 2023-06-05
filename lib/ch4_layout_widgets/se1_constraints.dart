@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_in_action_2nd_materials/shared/widgets/widgets.dart';
 
 class Se1Constraints extends StatelessWidget {
-  const Se1Constraints({super.key});
+  const Se1Constraints({
+    Key? key,
+  }) : super(key: key);
 
   final Widget redBox = const DecoratedBox(
     decoration: BoxDecoration(color: Colors.red),
@@ -16,7 +18,8 @@ class Se1Constraints extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ScaffoldWithCodeView(
+      filePath: 'lib/ch4_layout_widgets/se1_constraints.dart',
       appBar: AppBar(
         title: const Text('布局原理与约束（constraints）'),
       ),
