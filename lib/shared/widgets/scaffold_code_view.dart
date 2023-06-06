@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
-
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 import 'package:flutter_in_action_2nd_materials/core/constants/constants.dart';
 
-class ScaffoldWithCodeView extends StatelessWidget {
+class ScaffoldCodeView extends StatelessWidget {
   final PreferredSizeWidget? appBar;
   final String filePath;
   final String? codeLinkPrefix;
-  final Widget body;
-  final Widget? floatingActionButton;
+  final Widget child;
+  final double? itemExtent;
 
-  const ScaffoldWithCodeView({
+  const ScaffoldCodeView({
     Key? key,
     this.appBar,
     required this.filePath,
     this.codeLinkPrefix = GithubConstants.codeLinkPrefix,
-    required this.body,
-    this.floatingActionButton,
+    required this.child,
+    this.itemExtent,
   }) : super(key: key);
 
   @override
@@ -26,13 +25,11 @@ class ScaffoldWithCodeView extends StatelessWidget {
       appBar: appBar,
       body: WidgetWithCodeView(
         filePath: filePath,
-
-        /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-        /// (open-code-in-browser, copy-code-link) will be added in the code view.
+        // [codeLinkPrefix] is optional. When it's specified, two more buttons
+        // (open-code-in-browser, copy-code-link) will be added in the code view.
         codeLinkPrefix: codeLinkPrefix,
-        child: body,
+        child: child,
       ),
-      floatingActionButton: floatingActionButton,
     );
   }
 }
