@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_in_action_2nd_materials/shared/widgets/widgets.dart';
 
-class Se1Constraints extends StatelessWidget {
-  const Se1Constraints({
+class Se2Constraints extends StatelessWidget {
+  const Se2Constraints({
     Key? key,
   }) : super(key: key);
 
@@ -19,7 +19,7 @@ class Se1Constraints extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldCodeListView(
-      filePath: 'lib/ch4_layout_widgets/se1_constraints.dart',
+      filePath: 'lib/ch4_layout_widgets/se2_constraints.dart',
       appBar: AppBar(
         title: const Text('布局原理与约束（constraints）'),
       ),

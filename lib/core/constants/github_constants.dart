@@ -4,5 +4,5 @@ import 'package:flutter/foundation.dart' show immutable;
 class GithubConstants {
   const GithubConstants._();
   static const codeLinkPrefix =
-      'https://github.com/hwangblood/flutter_in_action_2nd_materials/tree/main';
+      'https://github.com/hwangblood/flutter_in_action_2nd_playground/tree/main';
 }

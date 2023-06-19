@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_in_action_2nd_materials/shared/widgets/widgets.dart';
 
-class Se2LinearLayout extends StatelessWidget {
-  const Se2LinearLayout({super.key});
+class Se3LinearLayout extends StatelessWidget {
+  const Se3LinearLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ScaffoldCodeListView(
-      filePath: 'lib/ch4_layout_widgets/se2_linear_layout.dart',
+      filePath: 'lib/ch4_layout_widgets/se3_linear_layout.dart',
       appBar: AppBar(
         title: const Text('线性布局（Row和Column）'),
       ),
