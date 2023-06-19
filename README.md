@@ -1,2 +1,3 @@
-[《Flutter实战·第二版》](https://book.flutterchina.club/) 随书源码
+[《Flutter 实战·第二版》](https://book.flutterchina.club/) 演练场
 
+Flutter 3.7.12
