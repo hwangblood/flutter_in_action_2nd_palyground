@@ -9,6 +9,10 @@ class ScaffoldCodeListView extends StatelessWidget {
   final String? codeLinkPrefix;
   final List<Widget> children;
   final double? itemExtent;
+  final Widget? drawer;
+  final Widget? floatingActionButton;
+  final FloatingActionButtonLocation? floatingActionButtonLocation;
+  final Widget? bottomNavigationBar;
 
   final scrollController = ScrollController();
 
@@ -19,6 +23,10 @@ class ScaffoldCodeListView extends StatelessWidget {
     this.codeLinkPrefix = GithubConstants.codeLinkPrefix,
     required this.children,
     this.itemExtent,
+    this.drawer,
+    this.floatingActionButton,
+    this.floatingActionButtonLocation,
+    this.bottomNavigationBar,
   }) : super(key: key);
 
   @override
@@ -44,6 +52,10 @@ class ScaffoldCodeListView extends StatelessWidget {
           ),
         ),
       ),
+      drawer: drawer,
+      floatingActionButton: floatingActionButton,
+      floatingActionButtonLocation: floatingActionButtonLocation,
+      bottomNavigationBar: bottomNavigationBar,
     );
   }
 }

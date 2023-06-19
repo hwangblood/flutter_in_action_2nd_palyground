@@ -30,6 +30,7 @@ flutter:
       fonts:
         - asset: assets/fonts/AbrilFatface-Regular.ttf
   assets:
+    - assets/images/
     # source code
     - lib/ch2_first_app/
     - lib/ch3_basic_widgets/

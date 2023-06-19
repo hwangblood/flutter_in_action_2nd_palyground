@@ -9,6 +9,10 @@ class ScaffoldCodeView extends StatelessWidget {
   final String? codeLinkPrefix;
   final Widget child;
   final double? itemExtent;
+  final Widget? drawer;
+  final Widget? floatingActionButton;
+  final FloatingActionButtonLocation? floatingActionButtonLocation;
+  final Widget? bottomNavigationBar;
 
   const ScaffoldCodeView({
     Key? key,
@@ -17,6 +21,10 @@ class ScaffoldCodeView extends StatelessWidget {
     this.codeLinkPrefix = GithubConstants.codeLinkPrefix,
     required this.child,
     this.itemExtent,
+    this.drawer,
+    this.floatingActionButton,
+    this.floatingActionButtonLocation,
+    this.bottomNavigationBar,
   }) : super(key: key);
 
   @override
@@ -30,6 +38,10 @@ class ScaffoldCodeView extends StatelessWidget {
         codeLinkPrefix: codeLinkPrefix,
         child: child,
       ),
+      drawer: drawer,
+      floatingActionButton: floatingActionButton,
+      floatingActionButtonLocation: floatingActionButtonLocation,
+      bottomNavigationBar: bottomNavigationBar,
     );
   }
 }
