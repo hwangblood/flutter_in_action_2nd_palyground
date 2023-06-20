@@ -2,6 +2,8 @@
 
 Flutter 3.7.12
 
+设备：Pixel 2
+
 ## TODO:
 
 - [ ] CodeView 中 linux 下无法滑动
