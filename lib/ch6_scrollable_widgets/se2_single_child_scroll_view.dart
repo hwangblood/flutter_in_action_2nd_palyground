@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_in_action_2nd_materials/shared/shared.dart';
 
-class Se1SingleChildScrollView extends StatelessWidget {
-  const Se1SingleChildScrollView({super.key});
+class Se2SingleChildScrollView extends StatelessWidget {
+  const Se2SingleChildScrollView({super.key});
 
   @override
   Widget build(BuildContext context) {
     String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     return ScaffoldCodeView(
-      filePath: 'lib/ch6_scrollable_widgets/se1_single_child_scroll_view.dart',
+      filePath: 'lib/ch6_scrollable_widgets/se2_single_child_scroll_view.dart',
       appBar: AppBar(
         title: const Text('SingleChildScrollView 示例'),
       ),
